@@ -1,0 +1,421 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif ;
+}
+
+.header{
+    background-color: #e5e5e5;
+
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.navbar{
+display: flex;
+align-items: center;
+padding: 20px;
+background-color: rgb(173, 52, 0);
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:hover{ 
+    background-color: rgb(0, 0, 0)
+}
+
+.menu-icon:hover{
+    background-color: rgb(243, 177, 177)
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: cursive;
+}
+
+
+/*-------content---------*/
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0px;
+}
+
+.col-2 h1{
+   font-size: 40px;
+   line-height: 55px;
+   margin: 25px 0;
+   color: firebrick;
+   font-family: cursive;
+}
+
+.col-2 p{
+font-size: 29px;
+font-weight: 120px;
+color: rgb(165, 0, 27);
+font-family:Bradley Hand ITC;
+ ;
+}
+
+.col-2 .btn{
+    cursor: pointer;
+    font-size: 25px;
+    display: inline-block;
+    background: rgb(0, 0, 0);
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    transition:background 0.5s;
+}
+
+.btn:hover{
+    background-color: deeppink;
+}
+
+/*-----------feautured----------*/
+
+.categories {
+    margin:70px  0;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.9s;
+  
+}
+
+.col-4 img{
+    width: 100%;
+    height: 300px;
+   
+}
+
+.titled{
+    text-align: center;
+    display: flex;
+    color: rgb(5, 26, 12);
+    justify-content: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    line-height: 60px;
+    position: relative;
+    margin: auto 80px;
+}
+   .titled::after{
+    content:'';
+    background: rgb(48, 48, 167);
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+   }
+
+   h4{
+color: maroon;
+font-family: sans-serif ;
+font-weight: normal;
+
+   }
+
+   .col-4 p{
+color: salmon;
+font-size:14px ;
+   }
+   .rating .fa{
+    color: darkorange;
+   }
+
+   .col-4 :hover{
+    transform: translateY(-10px);
+   }
+
+   .offer{
+    background-color: rgb(255, 244, 230);
+    margin-top: 80px;
+    padding: 30px 0;
+   }
+
+   .col-2 .offer-img{
+    padding: 50px;
+   }
+
+   small{
+    color: crimson;
+    font-size: 15px;
+    font-weight: 20px;
+  }
+
+  /*-------testimonial------*/
+
+
+  .testimonial{
+    padding-top:100px;
+  }
+
+  .testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(88, 102, 6, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+  }
+
+  .testimonial .col-3:hover{
+    transform: translateX(-10px);
+  }
+
+
+  .testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+  }
+
+  .fa.fa-quote-left{
+    font-size: 24px;
+    color: coral;
+  }
+
+  .col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: deeppink;
+  }
+
+ .testimonial .col-3 h3{
+    color: darkturquoise;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+
+  /*--------brand---------*/
+  .brands{
+    margin: 100px auto;
+  }
+
+  .col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    filter: grayscale(0);
+}
+
+/*-----------footer-------------*/
+
+.footer{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: rgb(233, 254, 255);
+}
+
+.footer h3{
+    color: rgb(240, 255, 255);
+    margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+min-width: 250px;
+margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex-basis: 1;
+    text-align: center;
+}
+
+.footer-col-2 img{
+width: 150px;
+margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+}
+
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: rgb(255, 255, 255);
+    height: 1px;
+    margin: 20px 0;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+
+}
+
+/*-------All products----------*/
+
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+
+select{
+    border: 1px solid coral;
+    padding: 5px;
+}
+
+select:focus{
+    outline: none;
+}
+
+.page-btn{
+    margin: 0 auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid cyan;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background: coral;
+    color: black;
+}
+
+/*---------media--------*/
+
+@media only screen and (max-width:800px){
+
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: yellow;
+        width: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+}
+
+nav ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav ul li a{
+    color: white;
+}
+
+.menu-icon{
+    display: block;
+    cursor: pointer;
+}
+
+.col-2 h1{
+font-size:20px;
+}
+
+
+    .col-2 p{
+        font-size: 10px;
+    }
+
+.col-2 img{
+    max-width: 100%;
+    padding: 40px 0px;
+    margin-left: 10px;
+    height: 90px;
+    margin-bottom: 20PX;
+        }
+
+}
